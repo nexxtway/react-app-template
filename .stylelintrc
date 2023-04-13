@@ -1,0 +1,16 @@
+{
+    "processors": ["stylelint-processor-styled-components"],
+    "extends": ["stylelint-config-standard", "stylelint-config-styled-components"],
+    "customSyntax": "postcss-html",
+    "rules": {
+        "declaration-colon-newline-after": null,
+        "declaration-empty-line-before": null,
+        "value-keyword-case": null,
+        "at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": ["mixin", "include", "extend"]
+            }
+        ]
+    }
+}
